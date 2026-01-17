@@ -28,6 +28,7 @@ CREATE TABLE IF NOT EXISTS `projects` (
   `end_date` DATE NULL,
   `user_id` INT NOT NULL,
   `project_description` TEXT NULL,
+  `project_status` VARCHAR(50) NOT NULL DEFAULT 'Nowy',
   PRIMARY KEY (`id`),
   KEY `idx_user_id` (`user_id`),
   CONSTRAINT `fk_projects_user`
