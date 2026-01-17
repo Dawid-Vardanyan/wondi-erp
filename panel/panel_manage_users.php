@@ -1,0 +1,42 @@
+<?php
+include('../perms/permission_check.php');
+?>
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="../style-panel.css">
+    <title>Zarządzanie pracownikami</title>
+</head>
+<body>
+<div class="h-screen">
+  <section class="container mx-auto">
+    <header class="mt-14 flex items-center justify-between">
+      <div></div>
+      <a href="panel.php" class="absolute left-1/2 -translate-x-1/2 transform">
+        <img src="https://i.imgur.com/PygCFSV.png" alt="">
+      </a>
+      <a href="functions/logout.php" class="font-bold">
+        Wyloguj się
+      </a>
+    </header>
+
+    <section class="w-2/3 mx-auto mt-20">
+    <h2 class="text-3xl font-bold text-center">Zarządzanie rejestrem pracowników</h2>
+      <div class="grid grid-cols-2 gap-16 mt-10">
+        <a href="panel_add_employee.php" class="block bg-primary text-white p-24 text-center font-bold text-lg">
+            Panel dodawania pracowników
+        </a>
+        <a href="panel_employee_list.php" class="block bg-primary text-white p-24 text-center font-bold text-lg">
+          Spis pracowników
+        </a>
+      </div>
+    </section>
+  </section>
+</div>
+</body>
+</html>
